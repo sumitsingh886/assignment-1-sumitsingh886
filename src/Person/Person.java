@@ -33,4 +33,13 @@ public class Person {
     public StringBuilder getContactNumbers() {
         return contactNumbers;
     }
+
+    public void appendContactNumbers(String newcontact) {
+        if (contactNumbers.length() == 0) {
+            contactNumbers.append(" ").append(newcontact);
+        } else {
+            contactNumbers.append(", ").append(newcontact);
+        }
+    }
+
 }
