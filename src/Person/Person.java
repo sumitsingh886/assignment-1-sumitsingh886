@@ -42,4 +42,13 @@ public class Person {
         }
     }
 
+    @Override
+    public String toString() {
+        return "-------- * -------- * -------- * --------\n" +
+                "First Name: " + firstname + "\n" +
+                "Last Name: " + lastname + "\n" +
+                "Contact Number: " + contactNumbers.toString() + "\n" +
+                "Email address: " + emailAddress + "\n" +
+                "-------- * -------- * -------- * --------\n";
+    }
 }
